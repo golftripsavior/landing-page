@@ -7,7 +7,7 @@
 <!-- ── PRIMARY SEO ── -->
 <title>GolfTripSavior — Stop Managing Spreadsheets. Start Playing Golf.</title>
 <meta name="description" content="Live scoring, skins, leaderboards, and AI round recaps for golf trips. Built for the guy who organizes the trip every year. White glove setup included. $99 per trip.">
-<meta name="keywords" content="golf trip app, golf trip scoring, golf skins tracker, golf trip leaderboard, golf outing app, golf trip organizer, live golf scoring, golf handicap app">
+<meta name="keywords" content="golf trip app, golf trip scoring, golf skins tracker, golf trip leaderboard, golf trip organizer, live golf scoring, golf handicap app, multi day golf trip">
 <meta name="author" content="GolfTripSavior">
 <link rel="canonical" href="https://www.golftripsavior.com/">
 
@@ -46,17 +46,10 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "One Round Outing",
-      "price": "0",
-      "priceCurrency": "USD",
-      "description": "Free for single round outings with unlimited players"
-    },
-    {
-      "@type": "Offer",
-      "name": "Full Golf Trip",
+      "name": "Golf Trip",
       "price": "99",
       "priceCurrency": "USD",
-      "description": "Full multi-round trip with AI recaps, white glove setup, and all features"
+      "description": "Full multi-day golf trip with unlimited rounds, AI recaps, white glove setup, and all features"
     }
   ],
   "featureList": [
@@ -501,13 +494,6 @@ nav {
 }
 .pricing-headline { font-size: clamp(32px, 5vw, 52px); color: var(--text); margin-bottom: 12px; }
 .pricing-sub { font-size: 18px; color: var(--text2); max-width: 480px; margin: 0 auto 56px; }
-.pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: 720px;
-  margin: 0 auto;
-}
 .pricing-card {
   background: var(--white);
   border-radius: 16px;
@@ -519,21 +505,6 @@ nav {
 .pricing-card.featured {
   border-color: var(--green-mid);
   position: relative;
-}
-.pricing-badge {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--green-mid);
-  color: var(--white);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 4px 16px;
-  border-radius: 20px;
-  white-space: nowrap;
 }
 .pricing-tier { font-size: 13px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
 .pricing-price { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 900; color: var(--text); line-height: 1; margin-bottom: 4px; }
@@ -881,43 +852,39 @@ footer {
 <section id="pricing">
   <p class="section-eyebrow">Simple pricing</p>
   <h2 class="display pricing-headline">Less than one player's greens fee.</h2>
-  <p class="pricing-sub">Your group is spending $400+ per person. The app that runs the whole trip costs less than a round.</p>
+  <p class="pricing-sub">Your group is spending $400+ per person. The app that runs the whole trip costs less than a single round.</p>
 
-  <div class="pricing-cards">
-    <div class="pricing-card">
-      <div class="pricing-tier">One Round Outing</div>
-      <div class="pricing-price"><span>$</span>0</div>
-      <div class="pricing-period">Free, forever</div>
-      <ul class="pricing-features">
-        <li>Unlimited players</li>
-        <li>Live scoring & skins</li>
-        <li>Real-time leaderboard</li>
-        <li>TV display mode</li>
-        <li class="no">AI round recaps</li>
-        <li class="no">Multi-round tracking</li>
-        <li class="no">Par challenges</li>
-      </ul>
-      <button class="pricing-btn secondary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get Started Free</button>
-    </div>
-
-    <div class="pricing-card featured">
-      <div class="pricing-badge">Most Popular</div>
-      <div class="pricing-tier">Full Golf Trip</div>
-      <div class="pricing-price"><span>$</span>99</div>
-      <div class="pricing-period">per trip, one-time</div>
-      <ul class="pricing-features">
+  <div style="max-width:420px;margin:0 auto;">
+    <div class="pricing-card featured" style="text-align:center;">
+      <div class="pricing-tier">Golf Trip</div>
+      <div style="display:flex;align-items:baseline;justify-content:center;gap:14px;margin-bottom:4px;">
+        <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:#ccc;text-decoration:line-through;line-height:1;"><span style="font-size:18px;font-weight:400;">$</span>99</div>
+        <div class="pricing-price" style="text-align:center;"><span>$</span>49</div>
+      </div>
+      <div class="pricing-period">per trip · one-time · no subscription</div>
+      <div style="display:inline-block;background:#e8f5e9;color:var(--green-mid);font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin:10px auto 0;letter-spacing:0.04em;">⏰ Limited Time Introductory Offer</div>
+      <ul class="pricing-features" style="text-align:left;margin-top:24px;">
         <li>Unlimited players</li>
         <li>Unlimited rounds</li>
         <li>Live scoring, skins & leaderboard</li>
+        <li>Handicap calculations — automatic</li>
         <li>AI round recaps (4 styles)</li>
         <li>Money tab & prize tracking</li>
         <li>Par challenges & hole games</li>
-        <li>TV display mode</li>
+        <li>Ryder Cup team format</li>
+        <li>TV display mode for the clubhouse</li>
+        <li>Installs like a native app</li>
         <li>White glove setup included</li>
         <li>Support during your trip</li>
       </ul>
-      <button class="pricing-btn primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
+      <button class="pricing-btn primary" style="margin-top:28px;" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get Early Access — $49</button>
+      <p style="font-size:12px;color:var(--text2);margin-top:12px;">One payment. Your guys use it all trip. No recurring fees. <strong>Regular price $99 — save 50% now.</strong></p>
     </div>
+
+    <p style="text-align:center;font-size:14px;color:var(--text2);margin-top:28px;">
+      Running multiple trips a year or managing trips for others? 
+      <a href="mailto:hello@golftripsavior.com" style="color:var(--green-mid);font-weight:600;text-decoration:none;">Ask us about corporate plans →</a>
+    </p>
   </div>
 </section>
 
